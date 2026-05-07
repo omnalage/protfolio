@@ -132,8 +132,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const clamp = (n, min, max) => Math.min(max, Math.max(min, n));
 
         tiltNodes.forEach((el) => {
-            const strength = 10; // degrees (kept subtle)
-            const zLift = 6; // px
+            const strength = 6; // degrees (gentler movement)
+            const zLift = 4; // px
 
             const onMove = (e) => {
                 const rect = el.getBoundingClientRect();

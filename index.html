@@ -23,7 +23,6 @@
             <a href="#home" class="nav-logo">Om Ashok Nalage</a>
             <ul class="nav-links">
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
@@ -43,7 +42,7 @@
                 <h1 class="hero-title">Hi, I'm Om Ashok Nalage</h1>
                 <!-- <p class="hero-subtitle">Software Developer & System Designer</p> -->
                 <p class="hero-description">
-                    I'm a Computer Science student at VNIT Nagpur, passionate about building scalable backend systems, distributed applications, and efficient web solutions.
+                    SDE-focused Computer Science undergraduate at VNIT Nagpur, building high-performance backend systems, distributed applications, and AI-enabled software products.
                 </p>
                 <div class="hero-highlights fade-in" aria-label="Quick highlights">
                     <div class="highlight-pill"><i data-lucide="server"></i><span>Backend & APIs</span></div>
@@ -84,26 +83,6 @@
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="content-section fade-in">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item fade-in tilt">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">May 2025 - June 2025</span>
-                        <h3 class="timeline-title">SDE Summer Intern</h3>
-                        <p class="timeline-company">Confidential (NDA)</p>
-                        <ul class="timeline-details">
-                            <li>Built a keyword-based video retrieval system using React.js, backend APIs, and private database search, enabling users to find meeting videos 3x faster.</li>
-                            <li>Implemented a speech-to-text transcription pipeline, making 100+ hours of video content searchable and improving knowledge accessibility.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Add more timeline-item blocks here for future experiences -->
-            </div>
-        </section>
-
         <!-- Projects Section -->
         <section id="projects" class="content-section fade-in">
             <h2 class="section-title">Personal Projects</h2>
@@ -111,13 +90,17 @@
                 <!-- Project 1 -->
                 <div class="project-card fade-in tilt">
                     <h3 class="project-title">Distributed Notification Delivery System</h3>
-                    <p class="project-description">Architected an event-driven notification pipeline supporting multi-channel delivery (email/SMS/push) handling 10,000+ events per minute with retries and dead-letter queues.</p>
+                    <p class="project-description">Architected an event-driven notification pipeline supporting multi-channel delivery (email/SMS/push), handling 10,000+ events per minute with acknowledgements, retries, and dead-letter queues.</p>
                     <div class="project-tags">
                         <span class="tag">C++</span>
                         <span class="tag">RabbitMQ</span>
                         <span class="tag">MySQL</span>
                         <span class="tag">REST APIs</span>
                     </div>
+                    <ul class="timeline-details">
+                        <li>Built horizontally scalable workers with concurrency controls; improved throughput by ~65% and reduced retry latency by ~40% in stress tests.</li>
+                        <li>Exposed idempotent REST APIs and achieved 99.95% delivery success with auditable persisted message states.</li>
+                    </ul>
                     <div class="project-links">
                         <a href="https://github.com/omnalage" target="_blank" rel="noopener noreferrer" class="project-link">
                             Source Code <i data-lucide="github"></i>
@@ -127,12 +110,16 @@
                 <!-- Project 2 -->
                 <div class="project-card fade-in tilt">
                     <h3 class="project-title">AI News Summarizer</h3>
-                    <p class="project-description">Developed an AI-powered web app using Streamlit to fetch, summarize, and evaluate news articles using GPT4All and DeepSeek LLMs with a multi-agent architecture.</p>
+                    <p class="project-description">Developed an AI-powered Streamlit app to fetch, summarize, and evaluate news articles using GPT4All and DeepSeek models in a multi-agent workflow.</p>
                     <div class="project-tags">
                         <span class="tag">Streamlit</span>
                         <span class="tag">GPT4All</span>
                         <span class="tag">Python</span>
                     </div>
+                    <ul class="timeline-details">
+                        <li>Integrated a local LLM summarizer and OpenRouter-based quality checker to improve summary accuracy.</li>
+                        <li>Secured API keys via .env and prepared the project for open-source deployment with clean docs and dependency management.</li>
+                    </ul>
                     <div class="project-links">
                         <a href="https://github.com/omnalage" target="_blank" rel="noopener noreferrer" class="project-link">
                             Source Code <i data-lucide="github"></i>
@@ -142,12 +129,16 @@
                 <!-- Project 3 -->
                 <div class="project-card fade-in tilt">
                     <h3 class="project-title">Step Tracking Application</h3>
-                    <p class="project-description">Engineered a fitness tracking system in C using B+ Trees with functionalities to add/delete records, manage groups, and rank performers on a leaderboard.</p>
+                    <p class="project-description">Engineered a fitness tracking system in C using AVL Trees with 7-day step records, plus group goal tracking and leaderboard functionality.</p>
                     <div class="project-tags">
                         <span class="tag">C</span>
-                        <span class="tag">B+ Trees</span>
+                        <span class="tag">AVL Trees</span>
                         <span class="tag">Data Structures</span>
                     </div>
+                    <ul class="timeline-details">
+                        <li>Implemented add, delete, and update operations for user records and weekly step performance.</li>
+                        <li>Built group management (up to 5 members/group) and dynamic top-performer ranking based on goals and step count.</li>
+                    </ul>
                     <div class="project-links">
                         <a href="https://github.com/omnalage" target="_blank" rel="noopener noreferrer" class="project-link">
                             Source Code <i data-lucide="github"></i>
@@ -164,7 +155,6 @@
                 <div class="skill-category fade-in">
                     <h4>Languages</h4>
                     <div class="skill-tags">
-                        <span class="tag">Java</span>
                         <span class="tag">C</span>
                         <span class="tag">C++</span>
                         <span class="tag">Python</span>
@@ -187,6 +177,8 @@
                         <span class="tag">React</span>
                         <span class="tag">Tailwind CSS</span>
                         <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">VS Code</span>
                         <span class="tag">Firebase</span>
                         <span class="tag">Docker</span>
                     </div>
@@ -206,6 +198,17 @@
                         <span class="tag">NumPy</span>
                         <span class="tag">Matplotlib</span>
                         <span class="tag">Scikit-Learn</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h4>Coursework</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Operating Systems</span>
+                        <span class="tag">Computer Networks</span>
+                        <span class="tag">DBMS</span>
+                        <span class="tag">Distributed Systems</span>
+                        <span class="tag">OOPs</span>
+                        <span class="tag">Data Structures & Algorithms</span>
                     </div>
                 </div>
             </div>
@@ -228,13 +231,13 @@
             </div>
         </section>
 
-        <!-- Recognition/Responsibilities Section -->
+        <!-- Positions of Responsibility Section -->
         <section id="recognition" class="content-section fade-in">
-            <h2 class="section-title">Awards & Recognition</h2>
+            <h2 class="section-title">Positions of Responsibility</h2>
             <ul class="recognition-list">
-                <li>Cultural Secretary in CSE Department Council</li>
-                <li>Event Manager in Annual Technical Fest AXIS'25</li>
-                <li>Junior Scientist Organiser at AXIS'24</li>
+                <li>Cultural Secretary in CSE Department Council (Feb 2024 - May 2025)</li>
+                <li>Event Manager in Annual Technical Fest AXIS'25 (Jul 2024 - Mar 2025)</li>
+                <li>Junior Scientist Organiser at AXIS'24 (Sep 2023 - Oct 2023)</li>
             </ul>
         </section>
 
